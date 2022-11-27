@@ -7,5 +7,6 @@
     "app_source_dir": "src",
     "app_test_dir": "_tests_",
     "app_build_dir": "dist",
-    "app_root_module_name": "RootModule"
+    "app_root_module_name": "RootModule",
+    "app_dev_server_port": "3000"
 }

@@ -1,8 +1,8 @@
 import React from "react";
-import RootModule from "./RootModule";
+import {{cookiecutter.app_root_module_name}} from "./{{cookiecutter.app_root_module_name}}";
 
 const App: React.FC = () => {
-    return <RootModule />
+    return <{{cookiecutter.app_root_module_name}} />
 };
 
 export default App;

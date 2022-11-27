@@ -37,10 +37,10 @@ const config = {
     },
     plugins: [
         new ModuleFederationPlugin({
-            name: "{{cookiecutter.app_name}}",
+            name: "{{cookiecutter.app_name | replace('-', '_')}}",
             filename: "remoteEntry.js",
             exposes: {
-                "./{{cookiecutter.app_root_module_name}}": "./{{cookiecutter.app_source_dir}}/RootModule"
+                "./{{cookiecutter.app_root_module_name}}": "./{{cookiecutter.app_source_dir}}/{{cookiecutter.app_root_module_name}}"
             },
             shared: { react: { singleton: true }, "react-dom": { singleton: true } },
         }),
@@ -58,7 +58,7 @@ if (isProd) {
 } else {
     config.devtool = "eval-cheap-module-source-map";
     config.devServer = {
-        port: 9000,
+        port: {{cookiecutter.app_dev_server_port}},
         static: {
             directory: path.join(__dirname, "{{cookiecutter.app_build_dir}}"),
         },
