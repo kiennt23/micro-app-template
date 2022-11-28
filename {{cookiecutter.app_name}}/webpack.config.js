@@ -8,7 +8,7 @@ const isProd = process.env.NODE_ENV === "production";
 const config = {
     mode: isProd ? "production" : "development",
     entry: {
-        index: "{{cookiecutter.app_entry}}",
+        index: "./{{cookiecutter.app_source_dir}}/index",
     },
     output: {
         path: path.resolve(__dirname, "{{cookiecutter.app_build_dir}}"),
@@ -45,7 +45,7 @@ const config = {
             shared: { react: { singleton: true }, "react-dom": { singleton: true } },
         }),
         new HtmlWebpackPlugin({
-            template: "{{cookiecutter.app_template}}",
+            template: "./index.html",
             inject: "body",
         }),
     ],

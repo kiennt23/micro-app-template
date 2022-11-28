@@ -2,8 +2,6 @@
     "app_name": "your-micro-app-name",
     "app_description": "Your micro app description",
     "app_author": "Kien Nguyen <kien@maneki.tech>",
-    "app_entry": "./src/index",
-    "app_template": "./src/index.html",
     "app_source_dir": "src",
     "app_test_dir": "_tests_",
     "app_build_dir": "dist",
