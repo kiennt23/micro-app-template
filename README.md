@@ -1,2 +1,2 @@
 # micro-app-template
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=kiennt23_micro-app-template&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=kiennt23_micro-app-template)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=maneki-technology_micro-app-template&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=maneki-technology_micro-app-template)
