@@ -8,5 +8,8 @@
     "app_test_dir": "_tests_",
     "app_build_dir": "dist",
     "app_root_module_name": "RootModule",
-    "app_dev_server_port": "3000"
+    "app_dev_server_port": "3000",
+    "_copy_without_render": [
+        ".github/*"
+    ]
 }
